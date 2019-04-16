@@ -1,0 +1,216 @@
+body {
+  font-family: BrandonText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  height: 5000px;
+}
+.reservationContainer {
+  display: block;
+  -webkit-box-shadow: 0 2px 8px rgba(153,153,153,.4);
+  box-shadow: 0 2px 8px rgba(153,153,153,.4);
+}
+.hh-header {
+  height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+}
+h3 {
+  font-size: 21px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #d8d9db;
+  margin: 0;
+}
+
+.party-size {
+  font-size: .875rem;
+  font-weight: 500;
+  padding-bottom: .25rem;
+}
+
+.dd-header {
+  cursor: pointer;
+  border-right: none;
+  position: relative;
+  height: 35px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8d9db;
+  outline: none;
+}
+
+.dd-header-title {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: .875rem;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d8d9db;
+}
+.dd-header:hover {
+  cursor: pointer;
+}
+.dd-header:focus {
+  border-bottom: 1px solid red;
+}
+.main-container {
+  padding: 0 1rem 1rem;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.party-date {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 50%;
+  flex: 1 50%;
+  margin-left: .5rem;
+  margin-top: .5rem;
+
+}
+.dd-list {
+  list-style: none;
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  overflow-y: scroll;
+  max-height: 400px;
+  margin: -30px;
+  z-index: 5;
+}
+
+
+.dd-list:hover {
+  cursor: pointer;
+}
+.dd-list-time {       
+  list-style: none;
+}
+
+#masterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whole {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+}
+.half-left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 50%;
+  flex: 1 50%;
+  margin-left: .5rem;
+}
+.half-right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 50%;
+  flex: 1 50%;
+  margin-left: 0.5rem;
+}
+
+#findATable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  width: 100%;
+}
+.findATableButton {
+  padding: .75rem 1rem;
+    text-decoration: none;
+    background-color: #da3743;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 18rem;
+    font-weight: 500;
+    border-radius: 2px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#sideBar {
+  width: 320px;
+  margin: 0, 0, 0, 1rem;
+  display: block;
+  direction: reverse;
+  -webkit-box-direction: reverse;
+}
+#time-label,
+#date-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+#timeContainer,
+#dateContainer {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: .875rem;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d8d9db;
+  margin-top: 1rem;
+}
+#mycalendar {
+  position: absolute;
+  margin-top: -50px;
+  z-index: 5;
+}
+#containerDiv {
+  width: 700px;
+  height: 900px;
+  margin: 0px;
+}

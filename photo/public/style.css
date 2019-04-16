@@ -1,0 +1,128 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: helvetica;
+  position: relative;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  max-width: 800px;
+  width: 100%;
+  margin: 20 auto;
+}
+.gallery-grid div {
+  position: relative;
+  cursor: pointer;
+}
+
+.modal1 {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  max-width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+}
+
+.modal1-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+}
+.modal1-body a {
+  position: absolute;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: lighter;
+  height: 40px; width: 40px;
+  text-align: center;
+}
+.modal1-body .modal1-close {
+  right: 20; top: 40px;
+  border-radius: 0 0 0 5px;
+  position:fixed;
+}
+.modal1-body .modal1-next,
+.modal1-body .modal1-prev {
+  right: 0; top: calc(50% - 25px);
+  height: 50px;
+  line-height: 40px;
+  font-size: 60px;
+}
+.modal1-body .modal1-prev {
+  left: -70px;
+  right: auto;
+}
+.modal1-body {
+  position: relative;
+}
+.image-sec{
+  color:white;
+}
+.flag{
+  float:right;
+  position: relative;
+}
+.myModal{
+  background: white;
+}
+
+.lana-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  width: 278px;
+  font-size: 14px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 3px;
+
+}
+
+.lana-btn-primary {
+  color: #fff;
+  background-color: #60b2d0;
+  border-color: #2e6da4
+
+}
+
+.lana-btn-default {
+  color: #60b2d0;
+  background-color: #fff;
+  border-color: #ccc
+}
+.ReportDiv{
+  align: center;
+  text-align: center;
+}
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+.view{
+  color: red;
+  position:relative;
+  left: 780px;
+}

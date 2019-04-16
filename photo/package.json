@@ -1,0 +1,69 @@
+{
+  "name": "photo",
+  "version": "",
+  "description": "",
+  "author": "",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "dev": "webpack --watch",
+    "start": "nodemon server/serverIndex.js",
+    "seed": "node ./database/seed.js",
+    "lint": "eslint --ignore-path .gitignore . --fix",
+    "test": "jest --coverage --"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/webpack-babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "globals": {
+      "window": true
+    }
+  },
+  "dependencies": {
+    "babel-jest": "^23.6.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.4.0",
+    "faker": "^4.1.0",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.3.6",
+    "nodemon": "^1.18.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-modal": "^3.6.1",
+    "request": "^2.88.0",
+    "sinon": "^7.1.1",
+    "webpack": "^4.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "style-loader": "^0.23.1",
+    "webpack-babel-jest": "^1.0.4",
+    "webpack-cli": "^3.1.2"
+  }
+}

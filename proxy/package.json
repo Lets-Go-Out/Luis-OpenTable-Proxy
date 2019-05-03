@@ -14,5 +14,8 @@
     "morgan": "^1.9.1",
     "newrelic": "^5.7.0",
     "nodemon": "^1.18.6"
+  },
+  "devDependencies": {
+    "loadtest": "^3.0.7"
   }
 }

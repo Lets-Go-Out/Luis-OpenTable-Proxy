@@ -1,12 +1,26 @@
-const express = require('express');
-const morgan = require('morgan');
+require('newrelic');
+const http = require('http');
+const fs = require('fs');
 const path = require('path');
-const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 
-app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(port, () => {
-  console.log(`server running at: http://localhost:${port}`);
+const server = http.createServer((req, res) => {
+  switch (req.method) {
+    case 'GET':
+      if (req.url === "/") {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        fs.createReadStream(path.join(__dirname, "./public/index.html")).pipe(res);
+      } else if (req.url === '/loaderio-ceec7b2c7ebe66dce715ecc7ded63627/') {
+	res.writeHead(200, {
+          "Content-Type": "text/plain",
+          "Content-Disposition": "attachment;"
+        });
+        fs.createReadStream(path.join(__dirname, './loaderio-ceec7b2c7ebe66dce715ecc7ded63627.txt')).pipe(res);
+      }
+      break;
+   default:
+      res.end();
+  }
 });
+server.listen(80);
+
